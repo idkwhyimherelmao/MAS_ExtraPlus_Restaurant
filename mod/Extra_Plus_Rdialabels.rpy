@@ -20,6 +20,17 @@ label walk_extra2:
         jump return_extra
     return
 
+label restaurant_init:
+    $ HKBHideButtons()
+    hide screen chibika_chill
+    hide monika
+    scene black
+    with dissolve
+    pause 2.0
+    call mas_background_change(submod_background_restaurant, skip_leadin=True, skip_outro=True)
+    show monika 1eua at t11
+    $ HKBShowButtons()
+
 label restaurant_talkdemo:
     show monika staticpose at t21
     $ rng_global = renpy.random.randint(1,2)
