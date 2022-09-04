@@ -1,3 +1,50 @@
+label restaurant_cakes:
+    if show_chibika is True:
+        show screen chibika_chill
+    $ food_player = None
+    m 1hua "We have arrived [mas_get_player_nickname()]~"
+    m 1eub "It's a nice place, don't you think?"
+    m 1hua "Speaking of nice, let me set the mood and get some food..."
+    m 3eub "I'll be right back."
+    call mas_transition_to_emptydesk from monika_hide_exp_2
+    pause 2.0
+    if mas_isDayNow():
+        $ monika_chr.wear_acs(extraplus_acs_flowers)
+        $ monika_chr.wear_acs(extraplus_acs_pancakes)
+    elif mas_isNightNow():
+        $ monika_chr.wear_acs(extraplus_acs_candles)
+        $ monika_chr.wear_acs(extraplus_acs_pasta)
+    call mas_transition_from_emptydesk("monika 1eua")
+    m 1hua "Now being here with you is even more romantic..."
+    m 1etb "By the way, do you have some food at your disposal?"
+    m 1rkd "I'd feel bad if I was the only one eating...{nw}"
+    $ _history_list.pop()
+    menu:
+        m "I'd feel bad if I was the only one eating...{fast}"
+        "Don't worry, I have something.":
+            $ food_player = True
+            m 1hub "I'm glad you have one to accompany me!"
+            m 3eub "Also, I recommend you have a drink to go with it."
+        "Don't worry about it.":
+            $ food_player = False
+            m 1ekc "Well, if you say so."
+            m 1ekb "I'd give you my food, but your screen limits me from doing so..."
+            m 3hka "I hope you at least have a drink with you!"
+    m 3hua "Ehehe~"
+    jump to_restaurant_loop
+    return
+
+label to_restaurant_loop:
+    show monika staticpose at t11
+    call screen restaurant_loop
+    return
+
+label restaurant_leave:
+    show monika 1hua at t11
+    m 1eta "Oh, you want us to go back?"
+    m 1eub "Sounds good to me!"
+    m 3hua "But before we go..."
+
 label go_to_restaurant:
     if renpy.get_screen("chibika_chill"):
         $ show_chibika = True
