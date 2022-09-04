@@ -1,3 +1,62 @@
+label go_to_restaurant:
+    if renpy.get_screen("chibika_chill"):
+        $ show_chibika = True
+    else:
+        $ show_chibika = False
+    python:
+        extra_chair = store.monika_chr.tablechair.chair
+        extra_table = store.monika_chr.tablechair.table
+        extra_old_bg = mas_current_background
+
+    if mas_curr_affection == mas_affection.HAPPY or mas_curr_affection == mas_affection.AFFECTIONATE:
+        jump sorry_player
+    if renpy.seen_label("check_label_restaurant"):
+        $ mas_gainAffection(1,bypass=True)
+        jump gtrestaurantv2
+    else:
+        $ mas_gainAffection(5,bypass=True)
+        pass
+label check_label_restaurant:
+    pass
+label gtrestaurant:
+    show monika 1eua at t11
+    if mas_isDayNow():
+        m 3sub "Oh, you want to go to the restaurant?"
+        m 3hub "I'm so happy to hear that, [player]!"
+        m 1hubsa "I know this date will be great!"
+        m 1hubsb "Okay, let's go [mas_get_player_nickname()]~"
+        jump restaurant_init
+
+    elif mas_isNightNow():
+        m 3sub "Oh, you want to go out to the restaurant?"
+        m 3hub "It's pretty sweet that you decided to go tonight."
+        m 1eubsa "This date night is going to be so romantic!"
+        m 1hubsb "Let's go [mas_get_player_nickname()]~"
+        jump restaurant_init
+    else:
+        m 1eub "Another time then, [mas_get_player_nickname()]."
+        jump return_extra
+    return
+
+label gtrestaurantv2:
+    show monika 1eua at t11
+    if mas_isDayNow():
+        m 3wub "Do you want to go to the restaurant again?"
+        m 2hub "The previous time we went, I had a lot of fun!"
+        m 2eubsa "So glad to hear it [player]!"
+        m 1hubsb "Well, let's go [mas_get_player_nickname()]~"
+        jump restaurant_init
+    elif mas_isNightNow():
+        m 3wub "Oh, do you want to go out to the restaurant again?"
+        m 2hub "The previous time we went, it was very romantic~"
+        m 2eubsa "So glad to go again [player]!"
+        m 1hubsb "Let's go [mas_get_player_nickname()]~"
+        jump restaurant_init
+    else:
+        m 1eub "Next time then, [mas_get_player_nickname()]."
+        jump return_extra
+    return
+
 label monika_boopcafebeta:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_):
