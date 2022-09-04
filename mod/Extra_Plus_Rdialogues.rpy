@@ -1,3 +1,24 @@
+label monika_boopcafebeta:
+    show monika staticpose at t11
+    if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_):
+        m 1ttp "...?"
+        m 1eka "Hey, I'm enjoying my food."
+        m 3hua "Do it when I finish it, okay?"
+    else:
+        m 1hub "*Boop*"
+    jump to_cafe_loop
+    return
+
+label sorry_player:
+    m 1ekd "I'm so sorry [player]."
+    m 1ekc "But I don't know how to use that place."
+    m 3lka "I'm still learning how to code and I don't want something bad to happen because of me..."
+    m 3hua "I know very well that you wanted to go out to the restaurant."
+    m 1eua "But, someday I will know how to use it, [player]."
+    m 1eub "Just be patient, okay~"
+    jump return_extra
+    return
+
 label extra_talk_doing1:
     m "Aw, [player], thank you for asking!"
     m "I feel great right now."
