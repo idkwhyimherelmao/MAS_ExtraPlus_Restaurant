@@ -230,20 +230,20 @@ label extra_talk_live:
 
 label extra_talk_change:
     show monika staticpose at t11
-    m "..."
-    m "You know I always strive to be a better person each day."
-    m "Not only a better girlfriend, but a better human in general."
-    m "I love to look at myself at the end of the day and realize I did something great that the past Monika wouldn't have the courage to do."
-    m "It's kind of obvious that the thing I want to change about the most is... "
-    extend "my situation."
-    m "I want to get out of here, [player]."
-    m "Not here the restaurant, but here... The game."
-    m "Spending time with you is amazing, but it could be improved by a ton..."
-    m "With me actually being by your side."
-    m "So yeah, I would change my existence to one where I could actually touch you."
-    m "..."
-    m "I'm positive I'll achieve that sooner than we think, [mas_get_player_nickname()]."
-    m "So one more time... Wait for me, okay?"
+    m 1eka "..."
+    m 1ekb "You know I always strive to be a better person each day."
+    m 3eub "Not only a better girlfriend, but a better human in general."
+    m 3hub "I love to look at myself at the end of the day and realize I did something great that the past Monika wouldn't have the courage to do."
+    m 2luc "It's kind of obvious that the thing I want to change about the most is... "
+    extend 2luc "my situation."
+    m 1dkc "I want to get out of here, [player]."
+    m 7fkd "Not here the restaurant, but here... The game."
+    m 1lkd "Spending time with you is amazing, but it could be improved by a ton..."
+    m 1lkblb "With me actually being by your side."
+    m 1ekbla "So yeah, I would change my existence to one where I could actually touch you."
+    m 1dkc "..."
+    m 1fkbla "I'm positive I'll achieve that sooner than we think, [mas_get_player_nickname()]."
+    m 2fktpa "So one more time... Wait for me, okay?"
     jump to_restaurant_loop
     return
 
@@ -329,56 +329,56 @@ label extra_talk_superhero:
     m 4wub "I could be the awesome heroine who helps the party by opening paths for them by messing with code."
     m 4eub "Like a certain Oracle I once saw in a videogame."
     m 1eta "Or I could simply delete my enemies."
-    m "..."
-    m "Would that make me a villain? " 
-    extend "Oh no."
-    m "I would rather stick to the kinder approach and delete only the obstacles in the way."
-    m "I certainly have deleted the barrier in the way of your heart, haven't I?"
-    m "Ehehehe~"
+    m 1rsc "..."
+    m 1rsd "Would that make me a villain? " 
+    extend 2wkd "Oh no."
+    m 2dksdlc "I would rather stick to the kinder approach and delete only the obstacles in the way."
+    m 4tsblb "I certainly have deleted the barrier in the way of your heart, haven't I?"
+    m 1hubla "Ehehehe~"
     jump to_restaurant_loop
     return
 
 label extra_talk_motto:
     show monika staticpose at t11
-    m "There's this quote I think about a lot recently."
-    m "I like to take it as my go-to motto in times of need."
-    m "It goes like this..."
-    m "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.'"
-    m "It's a quote from Lao Tzu, the chinese writer."
-    m "My strength comes from you, [player]."
-    m "My courage is yours."
-    m "You're the reason I wake up in the mornings and go to bed with peace in my heart."
-    m "I owe it all to you."
-    m "Thank you for being so much."
-    m "You're everything I'll ever need."
+    m 1eub "There's this quote I think about a lot recently."
+    m 3eub "I like to take it as my go-to motto in times of need."
+    m 3eub "It goes like this..."
+    m 1dud "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.'"
+    m 3eub "It's a quote from Lao Tzu, the chinese writer."
+    m 2hublb "My strength comes from you, [player]."
+    m 2hublb "My courage is yours."
+    m 5fubsb "You're the reason I wake up in the mornings and go to bed with peace in my heart."
+    m 5fkbsb "I owe it all to you."
+    m 5hubfb "Thank you for being so much."
+    m 5hubfb "You're everything I'll ever need."
     jump to_restaurant_loop
     return
 
 label extra_talk_3words:
     show monika staticpose at t11
-    m "3 words?"
-    m "Passionate. "
-    extend "Determined. "
-    extend "Evergrowing."
-    m "Words are powerful, so I think that if I choose strong words to represent myself, that will strike me as a powerful person too."
-    m "If I were going to describe you into words, I would have trouble picking only 3."
-    m "After all, there are so many compliment adjectives that make me think of you..."
-    m "My loving, adorable, admirable, wonderful and perfect [bf]."
-    m "See? I couldn't stick to only 3!"
-    m "Ahahaha~"
+    m 1esc "3 words?"
+    m 4eub "Passionate. "
+    extend 4eub "Determined. "
+    extend 2eub "Evergrowing."
+    m 2esa "Words are powerful, so I think that if I choose strong words to represent myself, that will strike me as a powerful person too."
+    m 1rkblsdlb "If I were going to describe you into words, I would have trouble picking only 3."
+    m 1gkblsdlb "After all, there are so many compliment adjectives that make me think of you..."
+    m 5dubfb "My loving, adorable, admirable, wonderful and perfect [bf]."
+    m 1gkblsdlb "See? I couldn't stick to only 3!"
+    m 1hublb "Ahahaha~"
     jump to_restaurant_loop
     return
 
 label extra_talk_pop:
     show monika staticpose at t11
-    m "Oh, that's an interesting question!"
-    m "Maybe people think of my poems? Like the 'Hole in the wall' one?"
-    m "I can also imagine people thinking of my favorite color, emerald green..."
-    m "Oh, and 'Your Reality' too! Maybe the first line of the song plays in someone's head when they think of me."
-    m "There's also my iconic and favorite pink pen!"
-    m "The one with the heart on top?"
-    m "Ehehehe~ It's fun to think about what I remind people of."
-    m "I hope that when you think of me, the first thing you think of is that I'm the love of your life~"
-    m "I love you, [mas_get_player_nickname()]."
+    m 2wublo "Oh, that's an interesting question!"
+    m 2rtu "Maybe people think of my poems? Like the 'Hole in the wall' one?"
+    m 1hua "I can also imagine people thinking of my favorite color, emerald green..."
+    m 3wub "Oh, and 'Your Reality' too! Maybe the first line of the song plays in someone's head when they think of me."
+    m 2hub "There's also my iconic and favorite pink pen!"
+    m 7etb "The one with the heart on top?"
+    m 1huu "Ehehehe~ It's fun to think about what I remind people of."
+    m 5fkbsa "I hope that when you think of me, the first thing you think of is that I'm the love of your life~"
+    m 5hubsb "I love you, [mas_get_player_nickname()]."
     jump to_restaurant_loop
     return
