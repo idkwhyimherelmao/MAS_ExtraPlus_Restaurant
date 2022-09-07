@@ -35,7 +35,7 @@ label restaurant_cakes:
             m 1ekb "I'd share my food with you,{w=0.3} but your screen is in the way..."
             m 3hka "Hopefully you at least have a drink with you!"
             m 3hua "Ehehe~"
-    jump to_restaurant_loop
+        jump to_restaurant_loop
     return
 
 label to_restaurant_loop:
@@ -103,18 +103,19 @@ label gtrestaurantv2:
             m "Hmm~ I'm still thinking about the time you took us there for our anniversary,"
             extend " I thought it was so romantic~"
             m "So I'm glad we get to go again~!"
-        elif: 
+        else: 
             m 2hub "The last time we went, I had so much fun!"
             m 2eubsa "So I'm glad to hear it [player]!"
         m 1hubsb "Well, let's go then [mas_get_player_nickname()]~"
         jump restaurant_init
+
     elif mas_isNightNow():
         m 3wub "Oh, you want to go out out to the restaurant again?"
         if persistent._extraplusr_hasplayergoneonanniversary = True:
             m "Hmm~{w=0.3} I'm still thinking about the time you took us there for our anniversary,"
             extend "You really know how to make our night amazing!"
             m "So I'm glad we get to go again~!"
-        elif: 
+        else: 
             m 2hub "The last time we went, it was so romantic~"
             m 2eubsa "So I'm glad to go again [player]!"
         m 1hubsb "Let's go then [mas_get_player_nickname()]~"
@@ -161,7 +162,6 @@ label extra_talk_doing1:
     m "Thank you for treating me here today by the way{w=0.3}, [player]."
     m 2hubsb "It's great to see you always come up with new ways to spend time with me and seize our time together."
     m "It makes me feel that much more closer to you."
-    if 
     m 5fkbsa "I really am my best self when I'm with you!"
     m 1eublb "What about you,{w=0.3} [player],{w=0.3} how are you feeling today?{nw}"
     $ _history_list.pop()
@@ -209,7 +209,7 @@ label extra_talk_doing1:
             m 1fublu "So I'll do my best to make this a wonderful date so we can cheer you up!"
             m "Okay,{w=0.3} [mas_get_player_nickname()]?"
             extend 1hublb "I love you...!"
-        jump to_restaurant_loop
+            jump to_restaurant_loop
     return 
 
 label extra_talk_doing2:
@@ -228,7 +228,7 @@ label extra_talk_doing2:
     menu:
         m "And how are you doing, [mas_get_player_nickname()]?{fast}"
 
-        "What were you sad about, [m_name]?"
+        "What were you sad about, [m_name]?":
             m 1rksdrb "Hm?{w=0.3} Oh... "
             extend 1eksdla "I was just being a little too hard on myself again..."
             m 2rkc "Thinking of my past and regretting it..."
