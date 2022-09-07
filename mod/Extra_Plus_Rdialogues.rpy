@@ -77,7 +77,7 @@ label gtrestaurant:
         m "It's so sweet of you to treat me to a date."
         if mas_anni.isAnni():
             m "And on our anniversary no less,{w=0.3} perfect timing [player]~!"
-            persistent._extraplusr_hasplayergoneonanniversary = True
+            $ persistent._extraplusr_hasplayergoneonanniversary = True
         m 1hubsa "I just know it'll be great!"
         m 1hubsb "Okay,{w=0.3} let's go [mas_get_player_nickname()]~"
         jump restaurant_init
@@ -87,7 +87,7 @@ label gtrestaurant:
         m "That's so sweet of you to treat me to a date."
         if mas_anni.isAnni():
             m "And on our anniversary no less,{w=0.3} perfect timing [player]~!"
-            persistent._extraplusr_hasplayergoneonanniversary = True
+            $ persistent._extraplusr_hasplayergoneonanniversary = True
         m 1hubsb "Let's go [mas_get_player_nickname()]~"
         jump restaurant_init
     else:
@@ -177,7 +177,8 @@ label extra_talk_doing1:
                 extend " but it seems like you were already a step ahead of me,{w=0.3} ahaha~!"
             m 1hublu "And if you're happy,{w=0.3} I'm happy too!"
             m 3fkbla "I love you,{w=0.3} never forget that,{w=0.3} [mas_get_player_nickname()]!"
-        "I feel great! Thanks for asking, [m_name]."
+        
+        "I feel great! Thanks for asking, [m_name].":
             m "Really?"
             extend 3sub " That's amazing to hear,{w=0.3} [mas_get_player_nickname()]!"
             m 2hub "A happy [player] means a happy me."
@@ -198,7 +199,7 @@ label extra_talk_doing1:
             m "Let me stop that for now before I fluster myself too much!"
             m 2hub "Ehehe!"
             
-        "Today wasn't a good day for me."
+        "Today wasn't a good day for me.":
             m 1ekc "That's awful, [player]..."
             m 1ekd "I'm so sorry for that!"
             m 1lsc "I hope spending time with me might make you feel better?"
