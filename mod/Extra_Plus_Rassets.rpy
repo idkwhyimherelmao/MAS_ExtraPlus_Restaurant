@@ -107,17 +107,6 @@ init python:
     )
     store.mas_sprites.init_acs(extraplus_acs_pancakes)
 
-    extraplus_acs_emptyplate = MASAccessory(
-        "emptyplate",
-        "emptyplate",
-        MASPoseMap(
-            default="0",
-            use_reg_for_l=True
-        ),
-        keep_on_desk=True
-    )
-    store.mas_sprites.init_acs(extraplus_acs_emptyplate)
-
     extraplus_acs_candles = MASAccessory(
         "extraplus_candles",
         "candles",
