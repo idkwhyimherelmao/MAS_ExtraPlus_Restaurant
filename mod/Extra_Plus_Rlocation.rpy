@@ -1,20 +1,20 @@
 #Day images
-image submod_background_restaurant_day = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant.png"
-image submod_background_restaurant_rain = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain.png"
-image submod_background_restaurant_overcast = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain.png"
-image submod_background_restaurant_snow = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain.png"
+image submod_background_restaurant_day = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant.png"
+image submod_background_restaurant_rain = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_rain.png"
+image submod_background_restaurant_overcast = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_overcast.png"
+image submod_background_restaurant_snow = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_snow.png"
 
 #Night images
-image submod_background_restaurant_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant-n.png"
-image submod_background_restaurant_rain_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-n.png"
-image submod_background_restaurant_overcast_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-n.png"
-image submod_background_restaurant_snow_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-n.png"
+image submod_background_restaurant_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant-n.png"
+image submod_background_restaurant_rain_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_rain-n.png"
+image submod_background_restaurant_overcast_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_overcast-n.png"
+image submod_background_restaurant_snow_night = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_snow-n.png"
 
 #Sunset images
-image submod_background_restaurant_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant-ss.png"
-image submod_background_restaurant_rain_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-ss.png"
-image submod_background_restaurant_overcast_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-ss.png"
-image submod_background_restaurant_snow_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/restaurant_rain-ss.png"
+image submod_background_restaurant_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant-ss.png"
+image submod_background_restaurant_rain_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_rain-ss.png"
+image submod_background_restaurant_overcast_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_overcast-ss.png"
+image submod_background_restaurant_snow_ss = "submods/ExtraPlusRestaurant/submod_assets/backgrounds/extraplusr_restaurant_snow-ss.png"
 
 init -1 python:
     submod_background_restaurant = MASFilterableBackground(
@@ -23,22 +23,22 @@ init -1 python:
 
         MASFilterWeatherMap(
             day=MASWeatherMap({
-                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_restaurant_day",
-                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_restaurant_rain",
-                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_restaurant_overcast",
-                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_restaurant_snow",
+                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_extraplusr_restaurant_day",
+                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_extraplusr_restaurant_rain",
+                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_extraplusr_restaurant_overcast",
+                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_extraplusr_restaurant_snow",
             }),
             night=MASWeatherMap({
-                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_restaurant_night",
-                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_restaurant_rain_night",
-                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_restaurant_overcast_night",
-                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_restaurant_snow_night",
+                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_extraplusr_restaurant_night",
+                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_extraplusr_restaurant_rain_night",
+                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_extraplusr_restaurant_overcast_night",
+                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_extraplusr_restaurant_snow_night",
             }),
             sunset=MASWeatherMap({
-                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_restaurant_ss",
-                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_restaurant_rain_ss",
-                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_restaurant_overcast_ss",
-                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_restaurant_snow_ss",
+                store.mas_weather.PRECIP_TYPE_DEF: "submod_background_extraplusr_restaurant_ss",
+                store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_extraplusr_restaurant_rain_ss",
+                store.mas_weather.PRECIP_TYPE_OVERCAST: "submod_background_extraplusr_restaurant_overcast_ss",
+                store.mas_weather.PRECIP_TYPE_SNOW: "submod_background_extraplusr_restaurant_snow_ss",
             }),
         ),
 
