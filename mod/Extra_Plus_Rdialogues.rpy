@@ -79,7 +79,7 @@ label gtrestaurant:
         m "It's so sweet of you to treat me to a date."
         if mas_anni.isAnni():
             m "And on our anniversary no less,{w=0.3} perfect timing [player]~!"
-            $ persistent._extraplusr_hasplayergoneonanniversary = True
+            $ persistent._extraplusr_hasplayergoneonanniversary == True
         m 1hubsa "I just know it'll be great!"
         m 1hubsb "Okay,{w=0.3} let's go [mas_get_player_nickname()]~"
         jump restaurant_init
@@ -89,7 +89,7 @@ label gtrestaurant:
         m "That's so sweet of you to treat me to a date."
         if mas_anni.isAnni():
             m "And on our anniversary no less,{w=0.3} perfect timing [player]~!"
-            $ persistent._extraplusr_hasplayergoneonanniversary = True
+            $ persistent._extraplusr_hasplayergoneonanniversary == True
         m 1hubsb "Let's go [mas_get_player_nickname()]~"
         jump restaurant_init
     else:
@@ -101,7 +101,7 @@ label gtrestaurantv2:
     show monika 1eua at t11
     if mas_isDayNow():
         m 3wub "Oh, you want to go out to the restaurant again?"
-        if persistent._extraplusr_hasplayergoneonanniversary = True:
+        if persistent._extraplusr_hasplayergoneonanniversary == True:
             m "Hmm~ I'm still thinking about the time you took us there for our anniversary,"
             extend " I thought it was so romantic~"
             m "So I'm glad we get to go again~!"
@@ -113,7 +113,7 @@ label gtrestaurantv2:
 
     elif mas_isNightNow():
         m 3wub "Oh, you want to go out out to the restaurant again?"
-        if persistent._extraplusr_hasplayergoneonanniversary = True:
+        if persistent._extraplusr_hasplayergoneonanniversary == True:
             m "Hmm~{w=0.3} I'm still thinking about the time you took us there for our anniversary,"
             extend "You really know how to make our night amazing!"
             m "So I'm glad we get to go again~!"
@@ -218,7 +218,7 @@ label extra_talk_doing2:
     show monika staticpose at t11
     m 1eka "I wasn't feeling so well before coming here, to be honest."
     m 1rkc "I was feeling kind of upset over some stuff..."
-    m 1fub "But being with you...{w=0.3}{nw]"
+    m 1fub "But being with you...{w=0.3}{nw}"
     if mas_anni.isAnni():
         extend  " especially on such an important day to us like this..."
     m "It always reminds me that as long as I'm by you your side,{w=0.3} no matter if it's metaphorically or physically,{w=0.3}{nw} "
