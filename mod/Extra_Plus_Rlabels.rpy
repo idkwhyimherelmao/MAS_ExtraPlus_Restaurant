@@ -139,4 +139,4 @@ label cafe_talkdemonext:
         if monika_chr.is_wearing_acs(extraplus_acs_emptyplate):
             pass
         else:
-            timer 900.0 action [Hide("cafe_loop"), Jump("monika_no_food")]
+            timer 900.0 action [Hide("restaurant_loop"), Jump("monika_no_food")]

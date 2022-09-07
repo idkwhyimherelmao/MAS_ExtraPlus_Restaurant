@@ -1,8 +1,6 @@
 default persistent._extraplusr_hasplayer_goneonanniversary = False
 
 label restaurant_cakes:
-    if show_chibika is True:
-        show screen chibika_chill
     $ food_player = None
     m 1hua "We've arrived [mas_get_player_nickname()]~"
     m 1eub "It's a nice place,{w=0.3} don't you think?"
