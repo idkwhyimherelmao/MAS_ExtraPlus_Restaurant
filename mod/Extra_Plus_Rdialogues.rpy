@@ -67,8 +67,10 @@ label go_to_restaurant:
     else:
         $ mas_gainAffection(5,bypass=True)
         pass
+
 label check_label_restaurant:
     pass
+    
 label gtrestaurant:
     show monika 1eua at t11
     if mas_isDayNow():
