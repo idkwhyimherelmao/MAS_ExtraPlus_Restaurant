@@ -35,7 +35,7 @@ label restaurant_cakes:
             m 1ekb "I'd share my food with you,{w=0.3} but your screen is in the way..."
             m 3hka "Hopefully you at least have a drink with you!"
             m 3hua "Ehehe~"
-        jump to_restaurant_loop
+    jump to_restaurant_loop
     return
 
 label to_restaurant_loop:
@@ -284,7 +284,7 @@ label extra_talk_doing2:
             m 5ekbsa "Your mood is infectious to me after all~!"
             m 5hubsb "Anyways,{w=0.3} let's just sit back and enjoy the rest of our date!"
             m "After all,{w=0.3} a day with [player] is never a day wasted!"
-        jump to_restaurant_loop
+    jump to_restaurant_loop
     return
 
 label extra_talk_live:

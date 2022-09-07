@@ -110,7 +110,7 @@ label cafe_talkdemonext:
             jump cafe_talkdemo
         elif playerchoice == "nevermind":
             jump to_cafe_loop
-    return
+        return
 
     elif rng_global == 2:
         python:
@@ -133,7 +133,7 @@ label cafe_talkdemonext:
             jump cafe_talkdemo
         elif playerchoice == "nevermind":
             jump to_cafe_loop
-    return
+        return
 
     screen restaurant_loop():
         if monika_chr.is_wearing_acs(extraplus_acs_emptyplate):
