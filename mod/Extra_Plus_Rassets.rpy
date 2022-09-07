@@ -86,7 +86,7 @@ label monika_no_food:
 
 init python:
     extraplus_acs_pasta = MASAccessory(
-        "pasta",
+        "extraplus_spaghetti",
         "pasta",
         MASPoseMap(
             default="0",
@@ -97,7 +97,7 @@ init python:
     store.mas_sprites.init_acs(extraplus_acs_pasta)
 
     extraplus_acs_pancakes = MASAccessory(
-        "pancakes",
+        "extraplus_pancakes",
         "pancakes",
         MASPoseMap(
             default="0",
@@ -118,19 +118,8 @@ init python:
     )
     store.mas_sprites.init_acs(extraplus_acs_emptyplate)
 
-    extraplus_acs_coffeecup = MASAccessory(
-        "coffeecup",
-        "coffeecup",
-        MASPoseMap(
-            default="0",
-            use_reg_for_l=True
-        ),
-        keep_on_desk=True
-    )
-    store.mas_sprites.init_acs(extraplus_acs_coffeecup)
-
     extraplus_acs_candles = MASAccessory(
-        "candles",
+        "extraplus_candles",
         "candles",
         MASPoseMap(
             default="0",
@@ -141,7 +130,7 @@ init python:
     store.mas_sprites.init_acs(extraplus_acs_candles)
 
     extraplus_acs_icecream = MASAccessory(
-        "icecream",
+        "extraplus_icecream",
         "icecream",
         MASPoseMap(
             default="0",
@@ -152,7 +141,7 @@ init python:
     store.mas_sprites.init_acs(extraplus_acs_icecream)
 
     extraplus_acs_pudding = MASAccessory(
-        "pudding",
+        "extraplus_lecheflanpudding",
         "pudding",
         MASPoseMap(
             default="0",
@@ -163,7 +152,7 @@ init python:
     store.mas_sprites.init_acs(extraplus_acs_pudding)   
 
     extraplus_acs_waffles = MASAccessory(
-        "waffles",
+        "extraplus_waffles",
         "waffles",
         MASPoseMap(
             default="0",
