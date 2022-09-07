@@ -42,10 +42,8 @@ You can check the detailed download instructions at the [wiki]().
 This submod was created by these people:
 
 <p align="center">
-  <a href="https://github.com/my-otter-self/MAS_ExtraPlus_Restaurant
-/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=MAS_ExtraPlus_Restaurant
-/mas_hydro&max=6" />
+  <a href="https://github.com/my-otter-self/MAS_ExtraPlus_Restaurant/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MAS_ExtraPlus_Restaurant/mas_hydro&max=6" />
   </a>
 </p>
 
