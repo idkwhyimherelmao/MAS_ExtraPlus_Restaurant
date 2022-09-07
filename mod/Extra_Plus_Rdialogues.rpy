@@ -34,7 +34,7 @@ label restaurant_cakes:
             m 1ekc "Well,{w=0.3} if you say so."
             m 1ekb "I'd share my food with you,{w=0.3} but your screen is in the way..."
             m 3hka "Hopefully you at least have a drink with you!"
-    m 3hua "Ehehe~"
+            m 3hua "Ehehe~"
     jump to_restaurant_loop
     return
 
@@ -112,7 +112,7 @@ label gtrestaurantv2:
         m 3wub "Oh, you want to go out out to the restaurant again?"
         if persistent._extraplusr_hasplayergoneonanniversary = True:
             m "Hmm~{w=0.3} I'm still thinking about the time you took us there for our anniversary,"
-            extend "You really know how to make my night amazing!"
+            extend "You really know how to make our night amazing!"
             m "So I'm glad we get to go again~!"
         elif: 
             m 2hub "The last time we went, it was so romantic~"
@@ -126,7 +126,7 @@ label gtrestaurantv2:
 
 label monika_boopcafebeta:
     show monika staticpose at t11
-    if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_pancakes):
+    if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_pancakes) or monika_chr.is_wearing_acs(extraplus_acs_waffles) or monika_chr.is_wearing_acs(extraplus_acs_icecream) or monika_chr.is_wearing_acs(extraplus_acs_pudding):
         if mas_isMoniLove():
             m "...!"
             m "[player]!"
@@ -158,7 +158,7 @@ label extra_talk_doing1:
     m 1ekbla "Aw [player]~! Thank you for asking!"
     m 1hublb "I'm feeling great right now!"
     m 3fubla "Spending time with my favorite person in the world always cheers me up!"  
-        m "Thank you for treating me here today by the way{w=0.3}, [player]."
+    m "Thank you for treating me here today by the way{w=0.3}, [player]."
     m 2hubsb "It's great to see you always come up with new ways to spend time with me and seize our time together."
     m "It makes me feel that much more closer to you."
     if 
@@ -218,7 +218,7 @@ label extra_talk_doing2:
     m 1fub "But being with you...{w=0.3}{nw]"
     if mas_anni.isAnni():
         extend  " especially on such an important day to us like this..."
-    m "It always reminds me that as long as I'm by you your side,{w=0.3} no matter if it's metaphorically or physically,{w=0.3}{nw} 
+    m "It always reminds me that as long as I'm by you your side,{w=0.3} no matter if it's metaphorically or physically,{w=0.3}{nw} "
     extend "I can push through any rainclouds of mine."
     m 2eka "So even if I'm down,{w=0.3} I'll be fine.{w=0.3} I promise."
     m 1fub "Thanks for asking,{w=0.3} [player]!"
@@ -292,7 +292,7 @@ label extra_talk_live:
     m 3hub "Ehehe!{w=0.3} Of course I would want to live anywhere as long as you were there,{w=0.3} [mas_get_player_nickname()]!"
     m 2ltc "But,{w=0.3} being serious now!{w=0.3} Let me think!"
     m 2lsc "Hmmm..."
-    m 2eub "It would have to be a literary country.{w=0.3} 
+    m 2eub "It would have to be a literary country.{w=0.3} "
     m "Something with with a rich culture to learn about,{w=0.3} something I've seen in books before and fell in love with."
     m 7eub "To be honest,{w=0.3} I've always dreamed of visiting Germany,{w=0.3} England,{w=0.3} and France when I crossed over."
     m 7eka "From what I've seen on books and the internet,{w=0.3} all the spots you can visit there are lovely!"
@@ -304,7 +304,7 @@ label extra_talk_live:
     m 3rubsb "Going on romantic dates at all the famous spots,{w=0.3} hand in hand..."
     if mas_isMoniLove():
         m "Maybe after a while you take me somewhere really beautiful to watch a golden sunset..."
-        m "And as the sky starts to turn to dusk and you can faintly see some stars show...{w=0.3} 
+        m "And as the sky starts to turn to dusk and you can faintly see some stars show...{w=0.3}" 
         m "You kiss me~"
         m "...Hm~ Wouldn't that be amazing, [player]~?"
     m 2etbsb "...Hey,{w=0.3} why are you looking at me like that?"
@@ -436,7 +436,7 @@ label extra_talk_annoy:
     m " Thinking that I had no right to feel or do the things I do about my situation because of it."
     m 2dfc "..."
     extend 7mfdc " I won't elaborate further,"
-    extend I {i}don't{/i} want to get in all that."
+    extend "I {i}don't{/i} want to get in all that."
     if mas_anni.isAnni():
         m "Not today."
     m "{i}*Sigh*{/i}"
