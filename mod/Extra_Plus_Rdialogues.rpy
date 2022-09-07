@@ -70,7 +70,7 @@ label go_to_restaurant:
 
 label check_label_restaurant:
     pass
-    
+
 label gtrestaurant:
     show monika 1eua at t11
     if mas_isDayNow():
@@ -247,7 +247,7 @@ label extra_talk_doing2:
             m 4hublb "And I can't wait to feel your warmth on my 'colder' days like these."
             m 5eka "Now let's get on with our date,{w=0.3} I wouldn't want to waste a lovely day like today!"
 
-        "Today wasn't a good day for me."
+        "Today wasn't a good day for me.":
             m 1ekc "That's awful, [player]..."
             m 1ekd "I'm so sorry for that!"
             extend "I hope I didn't add to it with my bad mood either."
@@ -257,7 +257,7 @@ label extra_talk_doing2:
             m "Okay,{w=0.3} [mas_get_player_nickname()]?"
             extend 1hublb "I love you...!"
 
-        "I feel sad now knowing you weren't feeling well."
+        "I feel sad now knowing you weren't feeling well.":
             m 1ekc "Aw~ "
             extend 3ekb "That's actually pretty sweet, [player]."
             m 3ekb "Thank you for worrying about me..."
@@ -284,7 +284,7 @@ label extra_talk_doing2:
             m 5ekbsa "Your mood is infectious to me after all~!"
             m 5hubsb "Anyways,{w=0.3} let's just sit back and enjoy the rest of our date!"
             m "After all,{w=0.3} a day with [player] is never a day wasted!"
-            jump to_restaurant_loop
+        jump to_restaurant_loop
     return
 
 label extra_talk_live:
