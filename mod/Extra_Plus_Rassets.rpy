@@ -35,7 +35,7 @@ label monika_no_food:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_pasta):
         $ monika_chr.remove_acs(extraplus_acs_pasta)
-        $ monika_chr.wear_acs(extraplus_acs_emptyplate)
+        $ monika_chr.wear_acs(extraplus_acs_remptyplate)
         m 1hua "Wow, I finished my pasta."
         m 1eub "I really enjoyed it~"
         m "Now I'll grab some dessert. Be right back!"
@@ -46,7 +46,7 @@ label monika_no_food:
 
     elif monika_chr.is_wearing_acs(extraplus_acs_pancakes):
         $ monika_chr.remove_acs(extraplus_acs_pancakes)
-        $ monika_chr.wear_acs(extraplus_acs_emptyplate)
+        $ monika_chr.wear_acs(extraplus_acs_remptyplate)
         m 1hua "Wow, I finished my pancakes."
         m 1sua "They were delicious~"
         m "Now I'll grab some dessert. Be right back!"
@@ -152,7 +152,7 @@ init python:
     store.mas_sprites.init_acs(extraplus_acs_waffles) 
     
     extraplusr_emptyplate = MASAccessory(
-        "extraplusr_emptyplate",
+        "extraplus_remptyplate",
         "remptyplate",
         MASPoseMap(
             default="0",
@@ -160,4 +160,4 @@ init python:
         ),
         keep_on_desk=True
     )
-    store.mas_sprites.init_acs(extraplusr_remptyplate)    
+    store.mas_sprites.init_acs(extraplus_remptyplate)    
