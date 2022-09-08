@@ -87,7 +87,7 @@ label monika_no_food:
 init python:
     extraplus_acs_pasta = MASAccessory(
         "extraplus_spaghetti",
-        "pasta",
+        "extraplus_spaghetti",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -98,7 +98,7 @@ init python:
 
     extraplus_acs_pancakes = MASAccessory(
         "extraplus_pancakes",
-        "pancakes",
+        "extraplus_pancakes",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -109,7 +109,7 @@ init python:
 
     extraplus_acs_candles = MASAccessory(
         "extraplus_candles",
-        "candles",
+        "extraplus_candles",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -120,7 +120,7 @@ init python:
 
     extraplus_acs_icecream = MASAccessory(
         "extraplus_icecream",
-        "icecream",
+        "extraplus_icecream",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -131,7 +131,7 @@ init python:
 
     extraplus_acs_pudding = MASAccessory(
         "extraplus_lecheflanpudding",
-        "pudding",
+        "extraplus_lecheflanpudding",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -142,7 +142,7 @@ init python:
 
     extraplus_acs_waffles = MASAccessory(
         "extraplus_waffles",
-        "waffles",
+        "extraplus_waffles",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
@@ -153,7 +153,7 @@ init python:
     
     extraplus_remptyplate = MASAccessory(
         "extraplus_remptyplate",
-        "remptyplate",
+        "extraplus_remptyplate",
         MASPoseMap(
             default="0",
             use_reg_for_l=True
