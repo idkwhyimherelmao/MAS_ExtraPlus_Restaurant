@@ -146,3 +146,11 @@ label to_restaurant_loop:
     show monika staticpose at t11
     call screen restaurant_loop
     return
+
+    style_prefix "hkb"
+    zorder 50
+    vbox:
+        xpos 0.05
+        yanchor 1.0
+        ypos 0.5
+        textbutton _("Ask") action [Hide("restaurant_loop"), Jump("restaurant_talkdemo")]
