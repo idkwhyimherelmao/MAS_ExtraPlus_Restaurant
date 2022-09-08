@@ -48,7 +48,8 @@ label restaurant_leave:
     m 1eta "Oh,{w=0.3} you're ready for us to leave?"
     m 1eub "Sounds good to me!"
     m 3hua "But before we go..."
-
+    jump restaurant_hide_acs
+    
 label go_to_restaurant:
     if renpy.get_screen("chibika_chill"):
         $ show_chibika = True
