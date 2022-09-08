@@ -136,17 +136,12 @@ label restaurant_talkdemonext:
             jump to_restaurant_loop
         return
 
-    screen restaurant_loop():
-        if monika_chr.is_wearing_acs(extraplus_acs_remptyplate):
-            pass
-        else:
-            timer 900.0 action [Hide("restaurant_loop"), Jump("monika_no_food")]
-
-label to_restaurant_loop:
-    show monika staticpose at t11
-    call screen restaurant_loop
-    return
-
+screen restaurant_loop():
+    if monika_chr.is_wearing_acs(extraplus_acs_remptyplate):
+        pass
+    else:
+        timer 900.0 action [Hide("restaurant_loop"), Jump("monika_no_food")]
+        
     style_prefix "hkb"
     zorder 50
     vbox:
@@ -154,3 +149,14 @@ label to_restaurant_loop:
         yanchor 1.0
         ypos 0.5
         textbutton _("Ask") action [Hide("restaurant_loop"), Jump("restaurant_talkdemo")]
+
+imagebutton:
+        idle "zoneone"
+        xpos 620
+        ypos 235
+        action [Hide("restaurant_loop"), Jump("monika_booprestaurantbeta")]
+        
+label to_restaurant_loop:
+    show monika staticpose at t11
+    call screen restaurant_loop
+    return
