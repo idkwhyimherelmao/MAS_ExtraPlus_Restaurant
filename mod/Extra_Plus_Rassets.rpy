@@ -150,6 +150,17 @@ init python:
         keep_on_desk=True
     )
     store.mas_sprites.init_acs(extraplus_acs_waffles) 
+
+    extraplus_acs_flowers = MASAccessory(
+        "extraplus_flowers",
+        "extraplus_flowers",
+        MASPoseMap(
+            default="0",
+            use_reg_for_l=True
+        ),
+        keep_on_desk=True
+    )
+    store.mas_sprites.init_acs(extraplus_acs_flowers)
     
     extraplus_acs_remptyplate = MASAccessory(
         "extraplus_remptyplate",
