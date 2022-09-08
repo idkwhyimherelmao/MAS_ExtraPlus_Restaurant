@@ -136,7 +136,7 @@ label cafe_talkdemonext:
         return
 
     screen restaurant_loop():
-        if monika_chr.is_wearing_acs(extraplusr_acs_emptyplate):
+        if monika_chr.is_wearing_acs(extraplus_acs_remptyplate):
             pass
         else:
             timer 900.0 action [Hide("restaurant_loop"), Jump("monika_no_food")]
