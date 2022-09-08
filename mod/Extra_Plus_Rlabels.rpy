@@ -150,7 +150,7 @@ screen restaurant_loop():
         ypos 0.5
         textbutton _("Ask") action [Hide("restaurant_loop"), Jump("restaurant_talkdemo")]
 
-imagebutton:
+    imagebutton:
         idle "zoneone"
         xpos 620
         ypos 235
