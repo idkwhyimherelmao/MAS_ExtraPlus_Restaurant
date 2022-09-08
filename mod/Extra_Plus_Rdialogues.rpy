@@ -424,11 +424,11 @@ label extra_talk_animal:
 label extra_talk_annoy:
     show monika staticpose at t11
     m 1euc "You mean pet peeves?"
-    m "Hmm,{w=0.3} Well..."
+    m "Hmm,{w=0.3} well..."
     m 1hksdlb "Ah,{w=0.3} I really hate when my pens spill ink while I write!"
     m 3ftsdld "It gets all over the palm of my hand,{w=0.3} making the writing all blurry on paper,"
     extend " and it's so hard to clean off myself."
-    m 1lssdlc "Or when I'm on a roll playing a piano piece and that {i]single{/i} sour note slips in..."
+    m 1lssdlc "Or when I'm on a roll playing a piano piece and that {i}single{/i} sour note slips in..."
     m 1lssdlc "And makes me get the rest of the notes wrong."
     m 1fssdlc "Ahaha! Aren't those so frustrating?"
     m "And it feels like it happens too often sometimes!"
