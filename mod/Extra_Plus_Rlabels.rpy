@@ -30,7 +30,8 @@ label restaurant_init:
     call mas_background_change(submod_background_restaurant, skip_leadin=True, skip_outro=True)
     show monika 1eua at t11
     $ HKBShowButtons()
-
+    jump restaurant_cakes
+    
 label restaurant_talkdemo:
     show monika staticpose at t21
     $ rng_global = renpy.random.randint(1,2)
