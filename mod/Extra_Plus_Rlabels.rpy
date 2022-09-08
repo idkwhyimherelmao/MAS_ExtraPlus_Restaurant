@@ -37,15 +37,15 @@ label restaurant_talkdemo:
     $ rng_global = renpy.random.randint(1,2)
     if rng_global == 1:
         python:
-            cafe_menu = []
-            cafe_menu.append((_("How are you doing, [m_name]?"), "t1"))
-            cafe_menu.append((_("If you could live anywhere, where would it be?"), "t2"))
-            cafe_menu.append((_("What would you change about yourself if you could?"), "t3"))
-            cafe_menu.append((_("Can we leave?"), "t4"))
-            cafe_menu.append((_("Next"), "next"))
-            cafe_menu.append((_("Nevermind"),"nevermind"))
+            restaurant_menu = []
+            restaurant_menu.append((_("How are you doing, [m_name]?"), "t1"))
+            restaurant_menu.append((_("If you could live anywhere, where would it be?"), "t2"))
+            restaurant_menu.append((_("What would you change about yourself if you could?"), "t3"))
+            restaurant_menu.append((_("Can we leave?"), "t4"))
+            restaurant_menu.append((_("Next"), "next"))
+            restaurant_menu.append((_("Nevermind"),"nevermind"))
 
-            playerchoice = renpy.display_menu(cafe_menu, screen="talk_choice")
+            playerchoice = renpy.display_menu(restaurant_menu, screen="talk_choice")
 
         if playerchoice == "t1":
             jump extra_talk_doing1
@@ -56,22 +56,22 @@ label restaurant_talkdemo:
         elif playerchoice == "t4":
             jump cafe_leave
         elif playerchoice == "next":
-            jump cafe_talkdemonext
+            jump restaurant_talkdemonext
         elif playerchoice == "nevermind":
-            jump to_cafe_loop
+            jump to_restaurant_loop
         return
 
     elif rng_global == 2:
         python:
-            cafe_menu = []
-            cafe_menu.append((_("How are you doing, [m_name]?"), "t1"))
-            cafe_menu.append((_("If you were a super-hero, what powers would you have?"), "t2"))
-            cafe_menu.append((_("Do you have a life motto?"), "t3"))
-            cafe_menu.append((_("Can we leave?"), "t4"))
-            cafe_menu.append((_("Next"), "next"))
-            cafe_menu.append((_("Nevermind"),"nevermind"))
+            restaurant_menu = []
+            restaurant_menu.append((_("How are you doing, [m_name]?"), "t1"))
+            restaurant_menu.append((_("If you were a super-hero, what powers would you have?"), "t2"))
+            restaurant_menu.append((_("Do you have a life motto?"), "t3"))
+            restaurant_menu.append((_("Can we leave?"), "t4"))
+            restaurant_menu.append((_("Next"), "next"))
+            restaurant_menu.append((_("Nevermind"),"nevermind"))
 
-            playerchoice = renpy.display_menu(cafe_menu, screen="talk_choice")
+            playerchoice = renpy.display_menu(restaurant_menu, screen="talk_choice")
 
         if playerchoice == "t1":
             jump extra_talk_doing2
@@ -82,24 +82,24 @@ label restaurant_talkdemo:
         elif playerchoice == "t4":
             jump cafe_leave
         elif playerchoice == "next":
-            jump cafe_talkdemonext
+            jump restaurant_talkdemonext
         elif playerchoice == "nevermind":
-            jump to_cafe_loop
+            jump to_restaurant_loop
     return
 
-label cafe_talkdemonext:
+label restaurant_talkdemonext:
     show monika staticpose at t21
     $ rng_global = renpy.random.randint(1,2)
     if rng_global == 1:
         python:
-            cafenext_menu = []
-            cafenext_menu.append((_("Aside from necessities, what's the one thing you couldn't go a day without?"), "t5"))
-            cafenext_menu.append((_("Is your glass half full or half empty?"), "t6"))
-            cafenext_menu.append((_("What annoys you most?"), "t7"))
-            cafenext_menu.append((_("Previous"), "previous"))
-            cafenext_menu.append((_("Nevermind"),"nevermind"))
+            restaurantnext_menu = []
+            restaurantnext_menu.append((_("Aside from necessities, what's the one thing you couldn't go a day without?"), "t5"))
+            restaurantnext_menu.append((_("Is your glass half full or half empty?"), "t6"))
+            restaurantnext_menu.append((_("What annoys you most?"), "t7"))
+            restaurantnext_menu.append((_("Previous"), "previous"))
+            restaurantnext_menu.append((_("Nevermind"),"nevermind"))
 
-            playerchoice = renpy.display_menu(cafenext_menu, screen="talk_choice")
+            playerchoice = renpy.display_menu(restaurantnext_menu, screen="talk_choice")
 
         if playerchoice == "t5":
             jump extra_talk_without
@@ -108,21 +108,21 @@ label cafe_talkdemonext:
         elif playerchoice == "t7":
             jump extra_talk_annoy
         elif playerchoice == "previous":
-            jump cafe_talkdemo
+            jump restaurant_talkdemo
         elif playerchoice == "nevermind":
-            jump to_cafe_loop
+            jump to_restaurant_loop
         return
 
     elif rng_global == 2:
         python:
-            cafenext_menu = []
-            cafenext_menu.append((_("Describe yourself in three words."), "t5"))
-            cafenext_menu.append((_("What do you think is the first thing to pop into everyone's minds when they think about you?"), "t6"))
-            cafenext_menu.append((_("If you were an animal, what animal would you be?"), "t7"))
-            cafenext_menu.append((_("Previous"), "previous"))
-            cafenext_menu.append((_("Nevermind"),"nevermind"))
+            restaurantnext_menu = []
+            restaurantnext_menu.append((_("Describe yourself in three words."), "t5"))
+            restaurantnext_menu.append((_("What do you think is the first thing to pop into everyone's minds when they think about you?"), "t6"))
+            restaurantnext_menu.append((_("If you were an animal, what animal would you be?"), "t7"))
+            restaurantnext_menu.append((_("Previous"), "previous"))
+            restaurantnext_menu.append((_("Nevermind"),"nevermind"))
 
-            playerchoice = renpy.display_menu(cafenext_menu, screen="talk_choice")
+            playerchoice = renpy.display_menu(restaurantnext_menu, screen="talk_choice")
 
         if playerchoice == "t5":
             jump extra_talk_3words
@@ -131,9 +131,9 @@ label cafe_talkdemonext:
         elif playerchoice == "t7":
             jump extra_talk_animal
         elif playerchoice == "previous":
-            jump cafe_talkdemo
+            jump restaurant_talkdemo
         elif playerchoice == "nevermind":
-            jump to_cafe_loop
+            jump to_restaurant_loop
         return
 
     screen restaurant_loop():
