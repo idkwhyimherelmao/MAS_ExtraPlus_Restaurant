@@ -151,7 +151,7 @@ init python:
     )
     store.mas_sprites.init_acs(extraplus_acs_waffles) 
     
-    extraplusr_emptyplate = MASAccessory(
+    extraplus_remptyplate = MASAccessory(
         "extraplus_remptyplate",
         "remptyplate",
         MASPoseMap(
