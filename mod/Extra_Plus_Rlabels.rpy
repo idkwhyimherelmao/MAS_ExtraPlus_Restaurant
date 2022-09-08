@@ -54,7 +54,7 @@ label restaurant_talkdemo:
         elif playerchoice == "t3":
             jump extra_talk_change
         elif playerchoice == "t4":
-            jump cafe_leave
+            jump restaurant_leave
         elif playerchoice == "next":
             jump restaurant_talkdemonext
         elif playerchoice == "nevermind":
@@ -80,7 +80,7 @@ label restaurant_talkdemo:
         elif playerchoice == "t3":
             jump extra_talk_motto
         elif playerchoice == "t4":
-            jump cafe_leave
+            jump restaurant_leave
         elif playerchoice == "next":
             jump restaurant_talkdemonext
         elif playerchoice == "nevermind":
