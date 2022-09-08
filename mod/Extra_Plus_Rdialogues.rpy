@@ -127,7 +127,7 @@ label gtrestaurantv2:
         jump return_extra
     return
 
-label monika_boopcafebeta:
+label monika_booprestaurantbeta:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_pancakes) or monika_chr.is_wearing_acs(extraplus_acs_waffles) or monika_chr.is_wearing_acs(extraplus_acs_icecream) or monika_chr.is_wearing_acs(extraplus_acs_pudding):
         if mas_isMoniLove():
@@ -141,7 +141,7 @@ label monika_boopcafebeta:
             m 3hua "Do that when I'm done with it, please?"
     else:
         m 1hub "*Boop*"
-    jump to_cafe_loop
+    jump to_restaurant_loop
     return
 
 label sorry_player:
