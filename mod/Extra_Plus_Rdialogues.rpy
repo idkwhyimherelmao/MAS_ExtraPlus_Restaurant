@@ -1,6 +1,8 @@
 default persistent._extraplusr_hasplayer_goneonanniversary = False
 
 label restaurant_cakes:
+    if show_chibika is True:
+        show screen chibika_chill
     $ food_player = None
     m 1hua "We've arrived [mas_get_player_nickname()]~"
     m 1eub "It's a nice place,{w=0.3} don't you think?"
@@ -402,7 +404,7 @@ label extra_talk_animal:
     m "When the reality is that they're just misunderstood,{w=0.3} being held against misrepresented or misinterpreted information."
     m 1eka "But despite all that,{w=0.3} black cats aren't alone in the world."
     m "For every person that looks down on them,{w=0.3} there's a kind,{w=0.3} thoughtful person who knows how to look past the superstition."
-    extend 1eka " That'll know how to look past the outer shell of those animals..."
+    m 1eka " That'll know how to look past the outer shell of those animals..."
     extend " And knows how to love and care for the cat with their whole heart!"
     m 1dkbla "And love them for who they really are."
     m 2dubla "..."
@@ -410,7 +412,7 @@ label extra_talk_animal:
     #only v good s.o's get to have cat monika say nya thems the rules
     if mas_isMoniLove():
         m 3hubsb "Because you've made this meownika right here very happy~!"
-        extend "Nya~!"
+        extend " Nya~!"
     else:
         m 3hubsb "Because you've made this kitten right here very happy~!"
     

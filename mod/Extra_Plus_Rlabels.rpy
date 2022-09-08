@@ -140,3 +140,8 @@ label cafe_talkdemonext:
             pass
         else:
             timer 900.0 action [Hide("restaurant_loop"), Jump("monika_no_food")]
+
+label to_restaurant_loop:
+    show monika staticpose at t11
+    call screen restaurant_loop
+    return
